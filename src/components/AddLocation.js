@@ -36,10 +36,12 @@ const AddLocation = ({FetchWeather}) => {
 
     // Deleting particular card
     const onDelete = ((city) => {
+        // localStorage.clear();
         console.log("deleting", city);
         setAllLocations(allLocations.filter((e) => {
             return e !== city;
         }))
+        
         window.location.reload();
     })
 
